@@ -101,9 +101,9 @@ public class Collecting {
                 return ((stringBuilder, courseResult) -> stringBuilder.
                         append(String.format("|%-15s|%-15d|%-10d|%-10d|%n-5f|%n-5s|%n"
                                 , courseResult.getPerson(),
+                                courseResult.getTaskResults().get("Lab 3. File Tree"),
                                 courseResult.getTaskResults().get("Lab 1. Figures"),
                                 courseResult.getTaskResults().get("Lab 2. War and Peace"),
-                                courseResult.getTaskResults().get("Lab 3. File Tree"),
                                 courseResult.getTaskResults().values().stream().reduce(0, Integer::sum) / 3,
                                 courseResult.getTaskResults().values().stream()
                                         .reduce(0, Integer::sum) / 3)));
